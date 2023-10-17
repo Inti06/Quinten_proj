@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.graph_objects as go
 
 
-
 class Streamlit_Page0:
     def __init__(self):
         # Initialize the Streamlit app and class attributes

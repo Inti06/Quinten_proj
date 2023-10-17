@@ -6,6 +6,7 @@ from app_p0 import Streamlit_Page0
 from app_p1 import Streamlit_Page1
 
 
+
 st.set_page_config(
     page_title="Stocks prediction",  # Set the page title
     page_icon="📈",  # Set a custom page icon
