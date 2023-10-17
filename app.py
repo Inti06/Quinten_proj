@@ -4,11 +4,6 @@ import warnings
 warnings.filterwarnings("ignore")
 from app_p0 import Streamlit_Page0
 from app_p1 import Streamlit_Page1
-from model_streamlit import model
-
-df = pd.read_csv("data/cleaned_data.csv", header=0)
-X = df.drop('stockPrice', axis=1)
-y = df['stockPrice']
 
 
 st.set_page_config(
