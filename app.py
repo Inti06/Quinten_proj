@@ -3,8 +3,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 from app_p0 import Streamlit_Page0
-from app_p1 import Streamlit_Page1
-
+#from app_p1 import Streamlit_Page1
 
 
 st.set_page_config(
