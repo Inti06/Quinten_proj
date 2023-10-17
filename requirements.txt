@@ -1,0 +1,18 @@
+# Comment explaining the purpose of the file or any other notes
+
+# Data manipulation and analysis
+numpy==1.19.5
+pandas==1.3.3
+
+# Data visualization
+matplotlib==3.4.3
+
+# Machine learning
+scikit-learn==0.24.2
+
+# Specific scikit-learn modules
+scipy==1.7.3  # Required by scikit-learn
+joblib==1.1.0  # Required by scikit-learn
+
+# Note: Some libraries such as StandardScaler and LinearRegression are part of scikit-learn.
+# The version numbers mentioned here are associated with the overall scikit-learn version.
