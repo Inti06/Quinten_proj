@@ -4,7 +4,6 @@ import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
 from app_p0 import Streamlit_Page0
-#from app_p1 import Streamlit_Page1
 
 
 st.set_page_config(
@@ -13,6 +12,9 @@ st.set_page_config(
     layout="wide",  # Use wide layout
     initial_sidebar_state="collapsed",  # Start with the sidebar collapsed
 )
+
+hide_decoration_bar_style = '<style> header {visibility: hidden;}</style>'
+st.markdown(hide_decoration_bar_style, unsafe_allow_html=True)
 
 # Title
 st.markdown(
@@ -32,7 +34,7 @@ if selected_page == "Portfolio":
 if selected_page == "Company":
      
     #import data
-    data = pd.read_csv('/Users/etiennedufayet/Desktop/Cours/X4A/data_quinten/Quinten_proj/data/for_app.csv')
+    data = pd.read_csv('data/data_test.csv')
 
     #Create a list of all availables companies
     companies_list = data['symbol'].drop_duplicates().to_list()

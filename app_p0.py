@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 
 
 
+
 class Streamlit_Page0:
     def __init__(self):
         ## Initialize the Streamlit app and class attributes
@@ -29,7 +30,7 @@ class Streamlit_Page0:
                                                index=0)
         self.selected_nb_companies = col2.selectbox('Select Portfolio Size', 
                                                     list(range(2, 30)), 
-                                                    index=6)
+                                                    index=4)
         quarter = int(self.selected_quarter[1])
         self.month = {1: 1, 2: 3, 3: 6, 4: 9}.get(quarter)
         self.year = int(self.selected_quarter[3:7])
